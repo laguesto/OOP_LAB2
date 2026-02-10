@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LAB2_C_
+namespace Class
 {
-    internal class String_Class
+    public class String_Class
     {
+
+
         private string value;
 
         public String_Class() //Конструктор за замовчуванням
@@ -19,11 +23,11 @@ namespace LAB2_C_
             str = "Aviation";
             value = str;
         }
-        
+
         public String_Class(String_Class other_value) //Конструктор копіювання
         {
             value = other_value.value;
-       }
+        }
 
         public void Set_Word(string str)
         {
@@ -48,7 +52,7 @@ namespace LAB2_C_
         }
         ~String_Class()
         {
-            
+
         }
 
     }

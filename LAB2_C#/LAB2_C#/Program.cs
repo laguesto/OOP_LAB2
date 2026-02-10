@@ -1,4 +1,4 @@
-﻿using LAB2_C_;
+﻿using Class;
 
 String_Class word1 = new String_Class();
 String_Class word2 = new String_Class("cup");
