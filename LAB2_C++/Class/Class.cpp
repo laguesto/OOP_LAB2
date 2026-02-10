@@ -1,17 +1,19 @@
-#include "String_Class.h"
+п»ї#include "pch.h"
+#include "framework.h"
+#include "Class.h"
 #include <string>
 
-String_Class::String_Class() //Конструктор за замовчуванням
+String_Class::String_Class() //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 {
     value = " ";
 }
 
-String_Class::String_Class(std::string str) //Конструктор с параметром
+String_Class::String_Class(std::string str) //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂРѕРј
 {
     value = str;
 }
 
-String_Class::String_Class(const String_Class& other_value) //Конструктор копіювання
+String_Class::String_Class(const String_Class& other_value) //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 {
     value = other_value.value;
 }
@@ -53,5 +55,6 @@ void String_Class::Sort_Descending()
 
 String_Class::~String_Class()
 {
-
+    delete& value;
 }
+
